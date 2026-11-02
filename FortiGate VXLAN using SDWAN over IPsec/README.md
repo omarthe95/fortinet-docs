@@ -24,8 +24,8 @@ This document describes the configuration of VXLAN on 2x FortiGate each with 2x 
   * FGT_DC & FGT_DR Port2 <ins>Trunk/Sub</ins> interface
   * VLAN-50 = 172.16.50.0/24
 
-
-
+## Topology
+![© Created using Obsidian & Excalidraw](VXLAN-SDW.png)
 
 ## MTU Prerequisites
 
@@ -94,3 +94,20 @@ config system interface<br><ul>edit "VXLAN-50"<br><ul>set vdom "root"<br>set ip 
 ## 4 Verification
 1. Ping From FGT-DC to 172.16.50.12
 2. `diagnose sys vxlan fdb list vxlan.50`
+
+
+## Authors
+
+* **Omar Adil** - [Linkedin](https://www.linkedin.com/in/omaradil/)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+## Acknowledgments
+
+* [Obsidian](https://obsidian.md/)
+* [Excalidraw](https://excalidraw.com/)
+
